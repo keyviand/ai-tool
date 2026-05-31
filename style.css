@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    margin: 0;
+    padding: 30px;
+    color: #222;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+h1 {
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    margin-bottom: 25px;
+    color: #555;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.candidate-box {
+    border: 1px solid #ddd;
+    padding: 18px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background: #fafafa;
+}
+
+button {
+    padding: 12px 18px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #333;
+    color: white;
+    font-size: 15px;
+}
+
+button.primary {
+    background: #0066cc;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background: #222;
+    color: white;
+}
+
+.note {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f1f1f1;
+    border-left: 4px solid #0066cc;
+}
+
+.strong {
+    font-weight: bold;
+    color: green;
+}
+
+.review {
+    font-weight: bold;
+    color: #b36b00;
+}
+
+.low {
+    font-weight: bold;
+    color: #b00020;
+}

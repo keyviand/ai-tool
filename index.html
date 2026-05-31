@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI HR Candidate Filter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>AI HR Candidate Filter</h1>
+    <p class="subtitle">
+        Enter job requirements and candidate resume text to generate match scores.
+    </p>
+
+    <section class="card">
+        <h2>Job Setup</h2>
+
+        <label for="jobTitle">Job Title</label>
+        <input type="text" id="jobTitle" placeholder="Junior Software Developer">
+
+        <label for="skills">Required Skills</label>
+        <input type="text" id="skills" placeholder="Python, SQL, JavaScript, ASP.NET, Communication">
+    </section>
+
+    <section class="card">
+        <h2>Candidates</h2>
+
+        <div id="candidateList">
+            <div class="candidate-box">
+                <label>Candidate Name</label>
+                <input type="text" class="candidate-name" placeholder="Candidate Name">
+
+                <label>Resume Text</label>
+                <textarea class="candidate-resume" rows="6" placeholder="Paste resume text here"></textarea>
+            </div>
+        </div>
+
+        <button onclick="addCandidate()">Add Another Candidate</button>
+        <button onclick="analyzeCandidates()" class="primary">Analyze Candidates</button>
+    </section>
+
+    <section class="card" id="resultsSection" style="display:none;">
+        <h2 id="resultsTitle">Results</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Candidate</th>
+                    <th>Match Score</th>
+                    <th>Matched Skills</th>
+                    <th>Missing Skills</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="resultsTable"></tbody>
+        </table>
+
+        <p class="note">
+            <strong>Ethical Note:</strong> This tool should support HR review, not replace human hiring decisions.
+        </p>
+    </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
